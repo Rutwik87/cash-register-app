@@ -17,16 +17,21 @@
         Enter the bill amount and cash given by the customer and know minimum number of notes to return.
     </p>
     <div class="input-form">
-    <label for="bill-amt">Enter Bill Amount: </label>
-    <input type="text" name="bill-amt">
+        <label for="bill-amt">Enter Bill Amount: </label>
+        <input type="text" name="bill-amt" id="bill-amt">
 
-    <label for="cash-given">Enter Cash Given: </label>
-    <input type="text" name="cash-given">
+        <label for="cash-given">Enter Cash Given: </label>
+        <input type="text" name="cash-given" id="cash-given">
 
-    <button>Check</button>
+        <button id="check">Check</button>
     </div>
+
     <h3 id="error-msg"></h3>
+
     <table>
+        <caption>
+            Return Change
+        </caption>
         <tbody>
             <tr>
                 <th>Quantity</th>
