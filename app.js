@@ -16,15 +16,13 @@ function clickhandler(){
     const billValue = billAmt.value; 
     const cashValue = cashGiven.value;
 
-    //input validation
     if(billValue <= 0 || billValue === "" || cashValue === ""){
         errorMsg.innerHTML = "Invalid Input"; 
     }
     else{
         errorMsg.innerHTML = "";
+        computeNotes(cashValue-billValue);
     }
-
-    computeNotes(cashValue-billValue);
 }
 
 function computeNotes(amount){
