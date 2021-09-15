@@ -16,7 +16,7 @@ function clickhandler(){
     const billValue = billAmt.value; 
     const cashValue = cashGiven.value;
 
-    if(billValue <= 0 || billValue === "" || cashValue === "" || billValue > cashGiven){
+    if(billValue <= 0 || billValue === "" || cashValue === "" || cashGiven < billValue){
         errorMsg.innerHTML = "Invalid Input"; 
     }
     else{
