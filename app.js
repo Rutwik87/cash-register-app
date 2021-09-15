@@ -13,8 +13,8 @@ var one = document.querySelector("#one");
 
 function clickhandler(){
 
-    const billValue = billAmt.value; 
-    const cashValue = cashGiven.value;
+    const billValue = parseInt(billAmt.value); 
+    const cashValue = parseInt(cashGiven.value);
 
     if(billValue <= 0 || cashValue <= 0 || billValue === "" || cashValue === "" || cashValue < billValue){
         errorMsg.innerHTML = "Invalid Input"; 
